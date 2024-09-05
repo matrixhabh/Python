@@ -14,6 +14,9 @@ Print|("Hello World", 7) >> First Program
 Print can also perform mathematical operations. 
 i.e, Print(4*5) >> 20 (Output)
 """
+"""
+print("KFC")
+"""
 
 # This is a single line comment
 
