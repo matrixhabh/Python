@@ -74,4 +74,8 @@ print(fruit[-1:-3]) # throws an error as index is out of range
 
 
 # Strings as an array
-'''A string is essentiallya sequenceof characters also known as array.'''
+'''A string is essentially a sequence of characters also known as array.'''
+
+# Quick Recap:-
+name = 'Rishabh'
+print(name[-6:-1]) # output = ?
