@@ -52,3 +52,33 @@ print("Exponentiation of",Number1, "and", Number2, "is", power)
 flr = Number1 // Number2
 
 print("Floor Division of", Number1, "and", Number2, "is", flr)
+
+
+
+# Calc using Typecasting functions
+
+
+
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+
+x = (int(a) + int(b))
+print("The sum of both the numbers is", x)
+
+x = (int(a) - int(b))
+print("The difference of both the numbers is", x)
+
+x = (int(a) * int(b))
+print("The product of both the numbers is", x)
+
+x = (int(a) / int(b))
+print("The quotient of both the numbers is", x)
+
+x = (int(a) % int(b))
+print("The remainder of both the numbers is", x)
+
+x = (int(a) ** int(b))
+print("The power of both the numbers is", x)
+
+x = (int(a) // int(b))
+print("The floor division of both the numbers is", x)
