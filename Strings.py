@@ -66,7 +66,7 @@ print("First four letters of mango are", fruit[:4]) # including 0 but not 4
 # Also we can use it as
 print("Middle letters of mango are", fruit[1:4]) # including 1 but not 4
 # Above syntax can also be written as
-print(fruit[-4:-1]) # "5-4=1":"5-1=4" 
+print(fruit[-4:len(fruit) - 1]) # "5-4=1":"5-1=4" 
 # Although above syntax is not recommended
 # And noting that
 print(fruit[-1:-3]) # throws an error as index is out of range
