@@ -48,7 +48,7 @@ for character in statement:
 statement2 = 'Rishabh,Rudra'
 print(statement2[0:7])
 
-# Now, string slicing and operations on string
+# Now, "String Slicing and Operations" on string
 
 statement3 = 'Rishabh,Rudra'
 print(len(statement3))
@@ -79,3 +79,61 @@ print(fruit[-1:-3]) # throws an error as index is out of range
 # Quick Recap:-
 name = 'Rishabh'
 print(name[-6:-1]) # output = ?
+
+
+
+# "More Methods" of how to use strings
+
+a = 'Rishabh !!!'
+print(len(a))               # => 11
+print(a.find('i'))          # => 1
+print(a.upper())            # => RISHABH !!!
+print(a.lower())            # => rishabh !!!
+print(a.replace('i', 'e'))  # => Reshabh !!!
+print(a.rstrip("!"))        # => Rishabh
+print(a.split(' '))         # => ['Rishabh', '!!!']
+
+ytube = 'lone wolf'
+print(ytube.capitalize()) # capitalize turns first letter to capital and rest to small
+
+str1 = 'hey !!!'
+print(len(str1))                # => 7
+print(len(str1.center(14)))     # => 14
+print(str1.endswith('!!!'))     # => True
+print(str1.endswith('y', 1, 3)) # => True
+
+# Note:- 
+print(str1.find('yhh')) # find returns -1 as 'yhh' is not present in 'hey !!!'
+# print(str1.index('yhh')) # index throws an error as 'yhh' is not present in 'hey !!!'
+
+str2 = 'Hello'
+print(str2.isalnum())
+
+str3 = 'Hello World00' # condition for isalpha() -> A-Z, a-z and no punctuations or numbers(0-9)
+print(str3.isalpha()) # shows False becoz it contains '00' which is not alphabet
+
+str4 = 'hello world'
+print(str4.islower()) # shows True as it contains only lower case alphabets
+
+str5 = "We wish you a Merry Christmas"
+print(str5.isprintable()) # shows True as it contains printable characters
+str6 = "We wish you a Merry Christmas\n"
+print(str6.isprintable()) # shows False as it contains non-printable elements
+
+str7 = "     "
+print(str7.isspace()) # shows True as it contains only spaces (by space bar)
+str8 = "     "
+print(str8.isspace()) # shows False as it contains only spaces (by tab bar)
+
+str9 = "World Health Organization"
+print(str9.istitle()) # shows True as it contains first letters of every word in capital
+
+str10 = "To kill a Mockingbird"
+print(str10.istitle()) # shows False as it contains first letters in small
+
+str11 = "Python is a interpreted language"
+print(str11.startswith('Python')) # shows True as it starts with 'Python'
+print(str11.swapcase()) # shows pTHON IS A INTERPRETED LANGUAGE
+
+str12 = "Python is a interpreted language"
+print(str12.title()) # shows Python Is A Interpreted Language
