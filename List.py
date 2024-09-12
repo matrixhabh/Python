@@ -94,3 +94,82 @@ lst = [i*i for i in range(10)]
 print(lst)
 lst = [i*i for i in range(10) if i%2==0]
 print(lst)
+
+
+
+# List Methods
+
+
+# Using Append
+
+lst = [1, 2, 3, 4, 5]
+print(lst)
+lst.append(6) # To add an item to the end of the list
+print(lst)
+
+# Using Sort
+
+lst = [11, 3, 5, 1, 50]
+lst.sort() # To sort the list in ascending order
+print(lst)
+# also
+lst.sort(reverse=True) # To sort the list in descending order
+print(lst)
+
+# Using Index
+
+lst3 = ['a', 'b', 'c', 'd', 'e', 'a', 'a']
+print(lst3.index('c')) # To find the index of the first occurrence of the item
+ 
+# Using Count
+
+print(lst3.count('a')) # To count the number of occurrences of the item
+
+# Usage of another list
+
+lst4 = lst3
+lst4[0] = 'z' # To change the first item of the list (example)
+print(lst3)
+
+
+lst4 = lst3.copy() # To copy the list
+lst4[0] = 'z' # To change the first item of the list (example)
+print(lst3)
+
+# Using Insert
+
+lst5 = ['a', 'b', 'c', 'd', 'e']
+lst5.insert(2, 'z') # To insert an item at a specific index
+print(lst5)
+
+# Using Extend
+
+l = [1, 2, 3]
+lst5.extend(l)
+print(lst5)
+
+# To Concatenate lists
+
+x = [1, 2, 3]
+y = [4, 5, 6]
+z = x + y
+print(z)
+
+# Using Remove
+
+lst6 = ['a', 'b', 'c', 'd', 'e']
+lst6.remove('c') # To remove an item from the list
+print(lst6)
+
+# Using Pop
+
+lst7 = ['a', 'b', 'c', 'd', 'e']
+item = lst7.pop() # To remove the last item from the list
+print(lst7)
+print(item)
+
+# Using Clear
+
+lst8 = ['a', 'b', 'c', 'd', 'e']
+lst8.clear() # To remove all the items from the list
+print(lst8)
