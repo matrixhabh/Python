@@ -48,7 +48,9 @@ for character in statement:
 statement2 = 'Rishabh,Rudra'
 print(statement2[0:7])
 
+
 # Now, "String Slicing and Operations" on string
+
 
 statement3 = 'Rishabh,Rudra'
 print(len(statement3))
@@ -137,3 +139,38 @@ print(str11.swapcase()) # shows pTHON IS A INTERPRETED LANGUAGE
 
 str12 = "Python is a interpreted language"
 print(str12.title()) # shows Python Is A Interpreted Language
+
+
+
+
+# Functional Strings Module
+
+
+
+letter = "Hey my name is {0} and I am from {1}"
+country = "India"
+name = "Rishabh"
+
+
+print(letter.format(name, country))
+# This method is very hard
+
+# And so we use "new formatting Strings (by PEP 498)"
+
+print(f"Hey my name is {name} and I am from {country}")
+country = "India"
+name = "Rishabh"
+
+# Hard way-
+
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49.999999)) # Does the round-off
+
+# Mentos way-
+
+price = 49.999999
+txt = f"For only {price:.2f} dollars!"
+print(txt)
+
+print(f"{2 * 30}") # 60
+print(type(f"{2 * 30}")) # <class 'str'>
