@@ -40,3 +40,23 @@ except ValueError:
 
 except IndexError:
     print("Index Error")
+
+
+# Finally Clause usage-
+
+def func1():
+    try:
+        l = [1, 3, 5, 7]
+        i = int(input("Enter the index: "))
+        print(l[i]) # prints the index no.
+        return 1 # returns 1 atlast if index entered is 0, 1, 2 or 3
+    except:
+        print("Invalid Index")
+        return 0 # returns 0 atlast if index entered is greater than '3'
+
+    finally: # very imp as it is printed doesn't matter if the syntax is correct or not
+
+        print("I am always executed")
+
+x = func1()
+print(x)
