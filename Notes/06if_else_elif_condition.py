@@ -47,3 +47,31 @@ else:
     print("num is positive")
 
 print("One of the conditions have been satisfied")
+
+
+# If else in one line :-
+
+# There is also a shorthand syntax for the if-else statement 
+# that can be used when the condition being tested is simple and the code blocks to be executed are short. 
+# Here's an example:
+
+a = 2
+b = 330
+print("A") if a > b else print("B")
+
+# One line if else statement, with 3 conditions:
+
+a = 330
+b = 330
+print("A") if a > b else print("=") if a == b else print("B")
+
+# Another example:
+
+result = value_if_true if condition else value_if_false
+
+# This syntax is equivalent to the following if-else statement:
+
+if condition:
+    result = value_if_true
+else:
+    result = value_if_false
