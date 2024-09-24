@@ -46,3 +46,48 @@ print(12/6) # output = 2
 print(2**4) # output = 16
 print(7%6) # output = 1
 print(13//6) # output = 2
+
+
+
+# After 26th part:-
+# Concept of Global and Local variables
+
+'''Global variables are defined outside of any function and can be accessed anywhere in the program.
+Local variables are defined inside a function and can only be accessed inside that function.'''
+
+x = 4 #global variable
+print(x) # first print 
+
+def hello():
+    x = 5 #local variable
+    print(f"The local x is {x}")
+    print("Hello Rishabh")
+
+print(f"The global x is {x}") # second print
+hello() # calling the function, third print
+x = 6
+print(f"The global x is {x}") # fourth print
+
+# Output
+"""
+4
+The global x is 4
+The local x is 5
+Hello Rishabh
+The global x is 6
+"""
+
+# Another example
+
+# here the global variable x is updated to 7 and the local variable y is not updated:-
+
+x = 10
+
+def my_func():
+    global x
+    x = 7
+    y = 8
+    print(y)
+
+my_func()
+print(x)
