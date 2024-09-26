@@ -46,3 +46,61 @@ with open('myfile.txt', 'r') as f:
     # ... do something with the file
     # example:
     f.write('Hey I am inside with')
+
+
+
+# Updated Module
+
+# Readlines() Method
+
+# The readline method reads a single line from the file.
+# If we want to read multiple lines, we can use loop.
+
+# EXAMPLE:
+# f = open('myfile.txt', 'r')
+# while True:
+#     line = f.readline()
+#     if not line:
+#         break
+#     print(line)
+
+i = 0
+while true:
+    i = i + 1
+    line = f.readline()
+    if not line:
+        break
+    print(line)
+    m1 = line.split(',')[0]
+    m2 = line.split(',')[1]
+    m3 = line.split(',')[2]
+    print(f"Marks of student {i} in Maths is {m1}")
+    print(f"Marks of student {i} in Science is {m2}")
+    print(f"Marks of student {i} in English is {m3}")
+
+    print(line)
+
+# Writelines() Method
+
+# The writeline() method writes a sequence of strings to a file.
+# The sequence can be iterate object, such as a list or a tuple.
+
+# Here's an example of how to use writelines() method:
+
+# example:
+f = open('myfile.txt', 'w')
+lines = ['line1', 'line2', 'line3']
+f.writelines(lines)
+f.close()
+
+# Keep in mind that the writelines() method does not add a newline character at the end of each line and 
+# characters between the strings of sequence.
+# If you want to add newlines between the strings, you can use a loop to write each string separately.
+
+#example:
+f = open('myfile.txt', 'w')
+lines = ['line1', 'line2', 'line3']
+for line in lines:
+    f.write(line) #or f.write(line + '\n')
+    f.write('\n')
+f.close()
