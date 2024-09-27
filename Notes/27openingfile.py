@@ -104,3 +104,32 @@ for line in lines:
     f.write(line) #or f.write(line + '\n')
     f.write('\n')
 f.close()
+
+# Another Upddated Module
+
+# Seek() Function
+
+with open('file.txt', 'r') as f:
+    print(type(f))
+    # Move to the 10th byte in file
+    f.seek(10)
+    # To find out how much byte we've moved on to we use
+    print(f.tell())
+    # Read the next 5 bytes
+    data = f.read(5)
+    print(data)
+
+
+# Truncate() Function
+
+# When you open a file in Python using the open function, you can specify the mode in 
+# which you want to open the file. If you specify the mode as 'w' or 'a', 
+# the file is opened in write mode and you can write to the file. 
+# However, if you want to truncate the file to a specific size, you can use the truncate function.
+
+with open('sample.txt', 'w') as f:
+  f.write('Hello World3!')
+  f.truncate(3)
+
+with open('sample.txt', 'r') as f:
+  print(f.read())
