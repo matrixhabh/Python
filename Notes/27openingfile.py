@@ -133,3 +133,36 @@ with open('sample.txt', 'w') as f:
 
 with open('sample.txt', 'r') as f:
   print(f.read())
+
+
+# Updated Module:-
+
+# Lambda Function
+# In python lambda is a small anonymous function without a name
+# It is defined using the lambda keyword and has the following syntax:
+
+lambda arguments: expression
+
+# lambda function is often used in situations where a short function is required for a short period of time
+
+# for example-
+
+# def double(x):
+#     return x*2   
+
+# # This can also be written as:
+double = lambda x: x*2
+
+print(double(5))
+
+# Another example with multiple arguments
+
+avg = lambda x,y,z: (x+y+z)/3
+print(avg(2,4,6))
+
+# Without addressing a function method:
+
+def appl(fx, value):
+    return 6 + fx(value)
+
+print(appl(lambda x: x*x*x, 2))
