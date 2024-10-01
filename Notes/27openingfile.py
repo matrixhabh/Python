@@ -166,3 +166,8 @@ def appl(fx, value):
     return 6 + fx(value)
 
 print(appl(lambda x: x*x*x, 2))
+
+def appl(fx, value):
+    return 6 + fx(value)
+
+print(appl(lambda x: x*x*x, 2))
