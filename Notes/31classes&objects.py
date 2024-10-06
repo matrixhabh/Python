@@ -164,6 +164,6 @@ b = Person("Travis", "Head")
 a.info()
 b.info()
 # print(a.name)
-# a.name = "Toliver"
+# a.name = "Travis"
 # a.occ = "Head"
 # a.info()
