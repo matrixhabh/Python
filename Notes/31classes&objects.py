@@ -197,3 +197,24 @@ a.addtonum(6)
 print(a.num)
 
 print(Math.add(7, 2)) 
+
+##
+
+# Class Methods as alternative Constructors-
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    @classmethod
+    def from_Str(cls, string): 
+      return cls(string.split("-")[0], int(string.split("-")[1]))
+
+e1 = Employee("Rishabh", 1000)
+print(e1.name)
+print(e1.salary)
+
+string = "Rishabh-1000"
+e2 = Employee.from_Str(string)
+print(e2.name)
