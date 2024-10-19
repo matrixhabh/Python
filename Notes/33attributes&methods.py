@@ -182,3 +182,29 @@ class Circle(Shape):
 
     def area(self):
         return 3.14 * self.radius * self.radius
+
+# Super Function-
+'''
+Another way to customize the behavior of a class is to call the base class method from 
+the derived class method. To do this, you can use the super function. 
+The super function allows you to call the base class method from the derived class method, 
+and can be useful when you want to extend the behavior of the base class method, rather than replace it.
+'''
+# for e.g.,
+class Shape:
+    def area(self):
+        print("Calculating area...")
+'''
+Now,
+If you want to create a derived class that represents a circle, 
+and you also want to print a message indicating the type of shape, 
+you can use the super function to call the base class method, and add your own message:
+'''
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        print("Calculating area of a circle...")
+        super().area()
+        return 3.14 * self.radius * self.radius
