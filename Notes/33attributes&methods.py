@@ -158,3 +158,27 @@ class Employee:
 
   def __call__(self):
     print("Hey I am good")
+
+##
+
+# Method Overwriting-
+'''
+Method overriding is a powerful feature in object-oriented programming that
+allows you to redefine a method in a derived class. 
+The method in the derived class is said to override the method in the base class
+'''
+# In Python, method overriding is a way to customize the behavior of a class based on its specific needs. 
+# For example, consider the following base class:
+class Shape:
+    def area(self):
+        pass
+
+# In this base class, the area method is defined, but does not have any implementation. 
+# If you want to create a derived class that represents a circle, you can override the area method like-
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
