@@ -86,3 +86,59 @@ a = Employee()
 print(a)
 
 print(a.__dir__())
+
+#
+
+## Single Inheritance Module
+
+'''
+Single inheritance is a type of inheritance where a class inherits properties 
+and behaviors from a single parent class. This is the simplest and most common form of inheritance.
+'''
+
+# Syntax-
+class ChildClass(ParentClass):
+    # class body
+
+# A Simple Example-
+class Animal:
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
+        
+    def make_sound(self):
+        print("Sound made by the animal")
+
+# If we want to create a new class for a specific type of animal, such as a dog, 
+# we can create a new class named "Dog" that inherits from the Animal class.
+class Dog(Animal):
+    def __init__(self, name, breed):
+        Animal.__init__(self, name, species="Dog")
+        self.breed = breed
+        
+    def make_sound(self):
+        print("Bark!")
+
+# Practice ;)
+
+class Animal:
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
+        
+    def make_sound(self):
+        print("Sound made by the animal")
+
+class Cat(Animal):
+    def __init__(self, name, breed):
+        Animal.__init__(self, name, species="Cat")
+        self.breed = breed
+        
+    def make_sound(self):
+        print("Meow!")
+
+d = Cat("Cat", "Catwoman")
+d.make_sound()
+
+a = Animal("Cat", "Cat")
+a.make_sound()
