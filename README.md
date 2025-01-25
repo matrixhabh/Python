@@ -1,1 +1,1 @@
-Welcome to my JS Notes 🏡
+Welcome to my Hand-typed notes!! 🏡🚀
