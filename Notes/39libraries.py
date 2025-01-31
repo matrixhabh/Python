@@ -1,3 +1,9 @@
+'''
+In Python, libraries are collections of pre-written code that provide functions and modules to 
+help developers perform various tasks without writing code from scratch. 
+These libraries simplify complex operations, making development faster and more efficient.
+'''
+
 # Some Libraries in Python-
 
 '''
